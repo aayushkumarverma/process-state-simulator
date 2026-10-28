@@ -368,7 +368,8 @@ with tab_sim:
         last_transition=simulator.last_transition,
         selected_pid=selected_process_obj.pid if selected_process_obj else None
     )
-    st.markdown(svg_diagram, unsafe_allow_html=True)
+    # Render SVG in an isolated HTML frame so Streamlit does not display its markup as text.
+    st.components.v1.html(svg_diagram, height=410, scrolling=False)
 
     # State & Transition Interactive Inspector
     with st.expander("🔍 Interactive State & Transition Inspector", expanded=False):

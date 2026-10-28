@@ -149,8 +149,8 @@ def render_svg_diagram(
         return f'fill="{fill}" font-weight="{weight}"'
 
     svg = f"""
-    <div style="width: 100%; overflow-x: auto; padding: 10px 0; background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
-    <svg viewBox="0 0 940 370" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; min-width: 720px; font-family: 'Inter', system-ui, -apple-system, sans-serif;">
+    <div style="width:100%; box-sizing:border-box; overflow-x:auto; padding:12px; background:#101827; border:1px solid #263449; border-radius:14px;">
+    <svg viewBox="0 0 940 370" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%; height:auto; min-width:720px; font-family:Inter, system-ui, -apple-system, sans-serif;">
       <defs>
         <!-- Gradients -->
         <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
